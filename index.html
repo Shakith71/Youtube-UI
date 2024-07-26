@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>youtube clone</title>
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/video.css">
+    <link rel="stylesheet" href="styles/sidebar.css">
+</head>
+<body>
+  <div class="header">
+    <div class="left-section">
+      
+      <svg class="hamburger-menu" clip-rule="evenodd" style="cursor: pointer;" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m22 16.75c0-.414-.336-.75-.75-.75h-18.5c-.414 0-.75.336-.75.75s.336.75.75.75h18.5c.414 0 .75-.336.75-.75zm0-5c0-.414-.336-.75-.75-.75h-18.5c-.414 0-.75.336-.75.75s.336.75.75.75h18.5c.414 0 .75-.336.75-.75zm0-5c0-.414-.336-.75-.75-.75h-18.5c-.414 0-.75.336-.75.75s.336.75.75.75h18.5c.414 0 .75-.336.75-.75z" fill-rule="nonzero"/></svg>    
+      <img class="youtube-logo" src="images/you.jpg">
+    </div>
+    <div class="middle-section">
+      <input type="text" placeholder="Search" class="search-bar" > 
+      <button class="search-button" >
+        <svg  class="search-icon" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M15.853 16.56c-1.683 1.517-3.911 2.44-6.353 2.44-5.243 0-9.5-4.257-9.5-9.5s4.257-9.5 9.5-9.5 9.5 4.257 9.5 9.5c0 2.442-.923 4.67-2.44 6.353l7.44 7.44-.707.707-7.44-7.44zm-6.353-15.56c4.691 0 8.5 3.809 8.5 8.5s-3.809 8.5-8.5 8.5-8.5-3.809-8.5-8.5 3.809-8.5 8.5-8.5z"/></svg>
+        <div class="tooltip">Search</div>
+      </button>
+      
+      <button class="voice-search-button" >
+        <svg  class="voice-search-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16 11c0 2.209-1.791 4-4 4s-4-1.791-4-4v-7c0-2.209 1.791-4 4-4s4 1.791 4 4v7zm4-2v2c0 4.418-3.582 8-8 8s-8-3.582-8-8v-2h2v2c0 3.309 2.691 6 6 6s6-2.691 6-6v-2h2zm-7 13v-2h-2v2h-4v2h10v-2h-4z"/></svg>
+        <div class="tooltip">Search with your voice</div>
+      </button>
+     
+    </div>
+    <div class="right-section">
+      <div class="upload-icon-container">
+        <svg class="upload-icon" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24"><path d="M4 11c-2.21 0-4-1.791-4-4s1.791-4 4-4 4 1.791 4 4-1.791 4-4 4zm10 2c.702 0 1.373-.127 2-.35v6.35c0 1.104-.896 2-2 2h-10c-1.104 0-2-.896-2-2v-6.35c.627.223 1.298.35 2 .35 2.084 0 3.924-1.068 5-2.687 1.076 1.619 2.916 2.687 5 2.687zm4 1v4l6 3v-10l-6 3zm-4-11c-2.209 0-4 1.791-4 4s1.791 4 4 4 4-1.791 4-4-1.791-4-4-4z"/></svg>
+        <div class="tooltip">Create</div>
+      </div>
+      <div class="upload-icon-container">
+        <svg class="app-icon" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24"><path d="M6 6h-6v-6h6v6zm9-6h-6v6h6v-6zm9 0h-6v6h6v-6zm-18 9h-6v6h6v-6zm9 0h-6v6h6v-6zm9 0h-6v6h6v-6zm-18 9h-6v6h6v-6zm9 0h-6v6h6v-6zm9 0h-6v6h6v-6z"/></svg>
+        <div class="tooltip">Grid</div>
+      </div>
+      <div class="notification-icon-container">
+        <svg class="notification-icon" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24"><path d="M15.137 3.945c-.644-.374-1.042-1.07-1.041-1.82v-.003c.001-1.172-.938-2.122-2.096-2.122s-2.097.95-2.097 2.122v.003c.001.751-.396 1.446-1.041 1.82-4.667 2.712-1.985 11.715-6.862 13.306v1.749h20v-1.749c-4.877-1.591-2.195-10.594-6.863-13.306zm-3.137-2.945c.552 0 1 .449 1 1 0 .552-.448 1-1 1s-1-.448-1-1c0-.551.448-1 1-1zm3 20c0 1.598-1.392 3-2.971 3s-3.029-1.402-3.029-3h6z"/></svg>
+        <div class="notification-count">3</div>
+        <div class="tooltip">Notifications</div>
+      </div>
+      <img class="current-user" style="cursor: pointer;" src="images/mine.jpg">
+    </div>
+    
+
+  </div>
+
+ <div class="sidebar">
+  <div class="sidebar-click">
+    <img src="images/home.svg">
+    <div>Home</div>
+  </div>
+  <div class="sidebar-click">
+     <img src="images/direction.svg">
+     <div>Explore</div>
+  </div>
+  <div class="sidebar-click">
+     <img src="images/subscription.svg">
+     <div>Subscriptions</div>
+  </div>
+  <div class="sidebar-click">
+     <img src="images/youT.svg">
+     <div>Originals</div>
+  </div>
+  <div class="sidebar-click">
+     <img src="images/play.svg">
+     <div>Youtube Music</div>
+  </div>
+  <div class="sidebar-click">
+     <img src="images/library.svg">
+     <div>Library</div>
+  </div> 
+ </div>
+
+  <div class="video-grid">
+    <div class="video-preview">
+      <div class="thumbnail-row">
+        <img class="thumbnail" src="./images/html.webp">
+       
+        <div class="video-time">14:20</div>
+      </div>
+      <div class="video-info-grid">
+        <div class="channel-picture">
+          <img class="profile-picture" src="channel/1stlogo.jpg">
+        </div>
+        <div class="video-info">
+          <p class="video-title">How to become a software developer</p>
+          <p class="video-author">Tech world</p>
+          <p class="video-stats">2M views &#183; 6 months ago</p> 
+        </div>
+      
+        
+      </div>
+    </div>
+    <div class="video-preview">
+      <div class="thumbnail-row">    
+        <img class="thumbnail" src="./images/daily.webp">  
+        
+        <div class="video-time">10:00</div> 
+      </div>
+      <div class="video-info-grid">
+        <div class="channel-picture">
+          <img class="profile-picture" src="channel/buddhalogo.jpg">
+        </div>
+        <div class="video-info">
+          <p class="video-title">5 small habits that will change your life Forever | Buddhism in English</p>
+          <p class="video-author">Buddhism</p>
+          <p class="video-stats">911K views &#183; 4 months ago</p> 
+        </div>
+      </div>
+    </div>
+    <div class="video-preview">
+      <div class="thumbnail-row">
+        <img class="thumbnail" src="./images/third.webp">
+        <div class="video-time">17:20</div>
+      </div>
+      <div class="video-info-grid">
+        <div class="channel-picture">
+          <img class="profile-picture" src="channel/third.jpg">
+        </div>
+        <div class="video-info">
+          <p class="video-title">Neuroscientist: Use this Morning Routine To BOOST MOTIVATION AND FOCUS</p>
+          <p class="video-author">Motivation2Study</p>
+          <p class="video-stats">314K views &#183; 3 months ago</p> 
+        </div>
+      
+        
+      </div>
+    </div>
+    <div class="video-preview">
+      <div class="thumbnail-row">    
+        <img class="thumbnail" src="./images/fourth.webp">   
+        <div class="video-time">9:47</div>
+      </div>
+      <div class="video-info-grid">
+        <div class="channel-picture">
+          <img class="profile-picture" src="channel/fourth.jpg">
+        </div>
+        <div class="video-info">
+          <p class="video-title">Elon Musk - How To Learn Anything</p>
+          <p class="video-author">Elon Musk Fan Zone</p>
+          <p class="video-stats">2.2M views &#183; 2 years ago</p> 
+        </div>
+      </div>
+    </div>
+    <div class="video-preview">
+      <div class="thumbnail-row">
+        <img class="thumbnail" src="./images/fifth.webp">
+        <div class="video-time">5:30</div>
+      </div>
+      <div class="video-info-grid">
+        <div class="channel-picture">
+          <img class="profile-picture" src="channel/fifth.jpg">
+          
+        </div>
+        <div class="video-info">
+          <p class="video-title">Success Starts with Boredom</p>
+          <p class="video-author">JustFacts</p>
+          <p class="video-stats">78K views &#183; 1 month ago</p> 
+        </div>
+      
+        
+      </div>
+    </div>
+    <div class="video-preview">
+      <div class="thumbnail-row">    
+        <img class="thumbnail" src="./images/sixth.webp">  
+        <div class="video-time">10:10</div> 
+      </div>
+      <div class="video-info-grid">
+        <div class="channel-picture">
+          <img class="profile-picture" src="channel/sixth.jpg">
+          
+        </div>
+        <div class="video-info">
+          <p class="video-title">1 Year of Coding in 5 Minutes &#40;Computer Science First Year&#41;</p>
+          <p class="video-author">Frying Pan</p>
+          <p class="video-stats">4.4M views &#183; 3 years ago</p> 
+        </div>
+      </div>
+    </div>
+    <div class="video-preview">
+      <div class="thumbnail-row">    
+        <img class="thumbnail" src="./images/hq720_custom_2.webp">  
+        <div class="video-time">10:10</div> 
+      </div>
+      <div class="video-info-grid">
+        <div class="channel-picture">
+          <img class="profile-picture" src="images/SeventhLogo.jpg">
+          
+        </div>
+        <div class="video-info">
+          <p class="video-title">If I wanted a Software Engineering Job, I'd do this</p>
+          <p class="video-author">Aman Manazir</p>
+          <p class="video-stats">1.1M views &#183; 1 year  ago</p> 
+        </div>
+      </div>
+    </div>
+    <div class="video-preview">
+      <div class="thumbnail-row">    
+        <img class="thumbnail" src="./images/eighth.webp">  
+        <div class="video-time">10:10</div> 
+      </div>
+      <div class="video-info-grid">
+        <div class="channel-picture">
+          <img class="profile-picture" src="images/eighthLogo.jpg">
+          
+        </div>
+        <div class="video-info">
+          <p class="video-title">Youtube coders are lying to you, Here's How it is</p>
+          <p class="video-author">Sid The IT Guy</p>
+          <p class="video-stats">381K views &#183; 3 Months ago</p> 
+        </div>
+      </div>
+    </div>
+
+    <div class="video-preview">
+      <div class="thumbnail-row">
+        <img class="thumbnail" src="./images/html.webp">
+       
+        <div class="video-time">14:20</div>
+      </div>
+      <div class="video-info-grid">
+        <div class="channel-picture">
+          <img class="profile-picture" src="channel/1stlogo.jpg">
+        </div>
+        <div class="video-info">
+          <p class="video-title">How to become a software developer</p>
+          <p class="video-author">Tech world</p>
+          <p class="video-stats">2M views &#183; 6 months ago</p> 
+        </div>
+      
+        
+      </div>
+    </div>
+    <div class="video-preview">
+      <div class="thumbnail-row">    
+        <img class="thumbnail" src="./images/daily.webp">  
+        
+        <div class="video-time">10:00</div> 
+      </div>
+      <div class="video-info-grid">
+        <div class="channel-picture">
+          <img class="profile-picture" src="channel/buddhalogo.jpg">
+        </div>
+        <div class="video-info">
+          <p class="video-title">5 small habits that will change your life Forever | Buddhism in English</p>
+          <p class="video-author">Buddhism</p>
+          <p class="video-stats">911K views &#183; 4 months ago</p> 
+        </div>
+      </div>
+    </div>
+    <div class="video-preview">
+      <div class="thumbnail-row">
+        <img class="thumbnail" src="./images/third.webp">
+        <div class="video-time">17:20</div>
+      </div>
+      <div class="video-info-grid">
+        <div class="channel-picture">
+          <img class="profile-picture" src="channel/third.jpg">
+        </div>
+        <div class="video-info">
+          <p class="video-title">Neuroscientist: Use this Morning Routine To BOOST MOTIVATION AND FOCUS</p>
+          <p class="video-author">Motivation2Study</p>
+          <p class="video-stats">314K views &#183; 3 months ago</p> 
+        </div>
+      
+        
+      </div>
+    </div>
+    <div class="video-preview">
+      <div class="thumbnail-row">    
+        <img class="thumbnail" src="./images/fourth.webp">   
+        <div class="video-time">9:47</div>
+      </div>
+      <div class="video-info-grid">
+        <div class="channel-picture">
+          <img class="profile-picture" src="channel/fourth.jpg">
+        </div>
+        <div class="video-info">
+          <p class="video-title">Elon Musk - How To Learn Anything</p>
+          <p class="video-author">Elon Musk Fan Zone</p>
+          <p class="video-stats">2.2M views &#183; 2 years ago</p> 
+        </div>
+      </div>
+    </div>
+    <div class="video-preview">
+      <div class="thumbnail-row">
+        <img class="thumbnail" src="./images/fifth.webp">
+        <div class="video-time">5:30</div>
+      </div>
+      <div class="video-info-grid">
+        <div class="channel-picture">
+          <img class="profile-picture" src="channel/fifth.jpg">
+          
+        </div>
+        <div class="video-info">
+          <p class="video-title">Success Starts with Boredom</p>
+          <p class="video-author">JustFacts</p>
+          <p class="video-stats">78K views &#183; 1 month ago</p> 
+        </div>
+      
+        
+      </div>
+    </div>
+    <div class="video-preview">
+      <div class="thumbnail-row">    
+        <img class="thumbnail" src="./images/sixth.webp">  
+        <div class="video-time">10:10</div> 
+      </div>
+      <div class="video-info-grid">
+        <div class="channel-picture">
+          <img class="profile-picture" src="channel/sixth.jpg">
+          
+        </div>
+        <div class="video-info">
+          <p class="video-title">1 Year of Coding in 5 Minutes &#40;Computer Science First Year&#41;</p>
+          <p class="video-author">Frying Pan</p>
+          <p class="video-stats">4.4M views &#183; 3 years ago</p> 
+        </div>
+      </div>
+    </div>
+    <div class="video-preview">
+      <div class="thumbnail-row">    
+        <img class="thumbnail" src="./images/hq720_custom_2.webp">  
+        <div class="video-time">10:10</div> 
+      </div>
+      <div class="video-info-grid">
+        <div class="channel-picture">
+          <img class="profile-picture" src="images/SeventhLogo.jpg">
+          
+        </div>
+        <div class="video-info">
+          <p class="video-title">If I wanted a Software Engineering Job, I'd do this</p>
+          <p class="video-author">Aman Manazir</p>
+          <p class="video-stats">1.1M views &#183; 1 year  ago</p> 
+        </div>
+      </div>
+    </div>
+    <div class="video-preview">
+      <div class="thumbnail-row">    
+        <img class="thumbnail" src="./images/eighth.webp">  
+        <div class="video-time">10:10</div> 
+      </div>
+      <div class="video-info-grid">
+        <div class="channel-picture">
+          <img class="profile-picture" src="images/eighthLogo.jpg">
+          
+        </div>
+        <div class="video-info">
+          <p class="video-title">Youtube coders are lying to you, Here's How it is</p>
+          <p class="video-author">Sid The IT Guy</p>
+          <p class="video-stats">381K views &#183; 3 Months ago</p> 
+        </div>
+      </div>
+    </div>
+
+    
+  </div>
+</body>
+</html>
